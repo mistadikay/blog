@@ -1,10 +1,17 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "Blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+  "description": "Denis Koltsov's blog",
+  "repository": "mistadikay/blog",
+  "license": "CC-BY-NC-ND-4.0",
+  "author": "Denis Koltsov <iam@mistadikay.com> (https://mistadikay.com/)",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "format": "prettier --write 'src/**/*.js' 'src/**/*.md'",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "firebase-tools": "^3.19.1",
@@ -38,25 +45,5 @@
     "eslint": "^5.0.1",
     "eslint-plugin-react": "^7.10.0",
     "prettier": "^1.13.6"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "CC-BY-NC-ND-4.0",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "deploy": "firebase deploy"
   }
 }
