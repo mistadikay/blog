@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "firebase-tools": "^3.19.1",
-    "gatsby": "^2.0.0-beta.12",
+    "gatsby": "^2.0.0-beta.13",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-offline": "next",
@@ -44,6 +44,6 @@
   "devDependencies": {
     "eslint": "^5.0.1",
     "eslint-plugin-react": "^7.10.0",
-    "prettier": "^1.13.6"
+    "prettier": "^1.13.7"
   }
 }
