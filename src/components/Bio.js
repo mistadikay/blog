@@ -22,16 +22,15 @@ class Bio extends React.Component {
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: rhythm(1),
+            height: rhythm(1),
           }}
         />
         <p>
           Hi, I'm{' '}
           <a href="https://mistadikay.com">
             <strong>Denis Koltsov</strong>
-          </a>, a Russian software developer living in Stockholm, Sweden. I do
-          things and I write stuff.
+          </a>, a Russian software developer living in Stockholm, Sweden.
         </p>
       </div>
     )

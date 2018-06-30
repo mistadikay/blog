@@ -2,10 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'Блog',
     author: 'Denis Koltsov',
-    description: 'Hi, I\'m Denis Koltsov, a Russian software developer living in Stockholm, Sweden. I do things and I write stuff.',
+    description:
+      "Hi, I'm Denis Koltsov, a Russian software developer living in Stockholm, Sweden.",
     siteUrl: 'https://blog.mistadikay.com',
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
@@ -15,7 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
+        plugins: [
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
