@@ -101,8 +101,7 @@ So given the fact that auto-tupling is possible, it's possible to call A with th
 Now it's unlikely that it's going to be fixed in Scala 2. But there is hope.
 
 > Dotty still uses auto-tupling but not as pervasively as nsc. In particular, auto-tupling is done after overloading resolution. It's a last effort attempt if things do not work out without it.
-
-<small>_[Martin Odersky](https://issues.scala-lang.org/browse/SI-2991?focusedCommentId=73778&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-73778)_</small>
+> <cite><small>[Martin Odersky](https://issues.scala-lang.org/browse/SI-2991?focusedCommentId=73778&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-73778)</small></cite>
 
 So auto-tupling is not going anywhere, but at least Scala 3 will not shit its pants during overloading resolution.
 
