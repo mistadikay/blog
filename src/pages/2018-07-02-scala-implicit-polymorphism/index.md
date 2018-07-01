@@ -23,7 +23,7 @@ public static Stubber doReturn(Object toBeReturned)
 public static Stubber doReturn(Object toBeReturned, Object... toBeReturnedNext)
 ```
 
-So basically the second version is a convenient new way to check more than one values at once:
+<br>So basically the second version is a convenient new way to check more than one values at once:
 
 ```java
 // uses first version of the method
@@ -33,7 +33,7 @@ doReturn("bar").when(mock).foo();
 doReturn("bar", "foo", "qix").when(mock).foo();
 ```
 
-Mockito is targetting Java and apparently Java is perfectly capable of recognizing when a single-argument version is called and when — the varargs one. However, when calling the same method from Scala we get an exception:
+<br>Mockito is targetting Java and apparently Java is perfectly capable of recognizing when a single-argument version is called and when — the varargs one. However, when calling the same method from Scala we get an exception:
 
 ```
 Error: ambiguous reference to overloaded definition,
@@ -43,7 +43,7 @@ match argument types (String)
             doReturn("bar").when(mock).foo()
 ```
 
-What this error means is that Scala can not recognize which version of the method has been called. Scala compiler thinks that both methods are equally valid candidates for that case. Now that's interesting. Let's try to understand why.
+<br>What this error means is that Scala can not recognize which version of the method has been called. Scala compiler thinks that both methods are equally valid candidates for that case. Now that's interesting. Let's try to understand why.
 
 ## Investigation
 
@@ -65,7 +65,7 @@ public static Stubber doReturn(Object toBeReturned)
 public static Stubber doReturn(Object toBeReturned, Object... toBeReturnedNext)
 ```
 
-It's possible to call B with parameters of A because as we already figured out, `toBeReturnedNext` can contain 0 elements. Fair enough.
+<br>It's possible to call B with parameters of A because as we already figured out, `toBeReturnedNext` can contain 0 elements. Fair enough.
 
 But why on Earth would compiler think that it's also possible to call A with the parameters of B when there are 2 or more arguments? Method A receives only one argument isn't it?
 
