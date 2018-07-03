@@ -92,6 +92,11 @@ m(1, 2, 3)
 ```
 <small>[[live example]](https://scastie.scala-lang.org/mistadikay/yorHmKzARdC4IKF5N6qMxw/4)</small>
 
+> The aim of auto-tupling is just to avoid weird looking ((a, b, c)) syntax.
+> <cite><small>[Martin Odersky](https://github.com/lampepfl/dotty/pull/51#issuecomment-37437618)</small></cite>
+
+Ah well, at least it's pretty.
+
 So given the fact that auto-tupling is possible, it's possible to call A with the parameters of B since they can be converted into a tuple which makes A and B equally specific during overloading resolution.
 
 ## There is hope
@@ -102,6 +107,11 @@ Now it's unlikely that it's going to be fixed in Scala 2. But there is hope.
 
 > Dotty still uses auto-tupling but not as pervasively as nsc. In particular, auto-tupling is done after overloading resolution. It's a last effort attempt if things do not work out without it.
 > <cite><small>[Martin Odersky](https://issues.scala-lang.org/browse/SI-2991?focusedCommentId=73778&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-73778)</small></cite>
+
+Another quote:
+
+> Note that compared to Scala 2.x, auto-tupling is more restricted. ... it does not apply if the function in question is overloaded. This avoids problems like accidentally picking an overloaded variant taking an Object parameter when some other variant is intended but the right number of parameters is not passed.
+> <cite><small>[Martin Odersky](hhttps://github.com/lampepfl/dotty/pull/51#issuecomment-37105935)</small></cite>
 
 So auto-tupling is not going anywhere, but at least Scala 3 will not shit its pants during overloading resolution.
 
