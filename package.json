@@ -16,8 +16,8 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "firebase-tools": "^3.19.1",
-    "gatsby": "^2.0.0-beta.13",
+    "firebase-tools": "^3.19.2",
+    "gatsby": "^2.0.0-beta.15",
     "gatsby-plugin-feed": "^2.0.0-beta.3",
     "gatsby-plugin-google-analytics": "^2.0.0-beta.2",
     "gatsby-plugin-offline": "^2.0.0-beta.2",
