@@ -12,7 +12,7 @@
     "test": "npm run lint",
     "format": "prettier --write 'src/**/*.js'",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "rimraf public && gatsby build",
     "deploy": "firebase deploy"
   },
   "dependencies": {
@@ -39,6 +39,7 @@
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "rimraf": "^2.6.2",
     "typeface-merriweather": "0.0.54",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.17",
