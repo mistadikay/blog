@@ -9,7 +9,7 @@ A short prehistory: we have a huge monolithic Scala web-application that was wri
 
 ## "Error: ambiguous reference to overloaded definition..." WHAT?
 
-![](swanson.jpg)
+![Ron](./swanson.jpg)
 
 We use an excellent [Mockito](http://site.mockito.org/) framework in unit-tests, but it was never upgraded from v1 to v2, so we decided to fix that since [a lot of nice improvements](https://github.com/mockito/mockito/wiki/What%27s-new-in-Mockito-2) were introduced in v2 that might make our unit-tests cleaner and better.
 
@@ -47,7 +47,7 @@ match argument types (String)
 
 ## Investigation
 
-![](poirot.jpg)
+![Poirot](./poirot.jpg)
 
 When we call it with 2 or more arguments, a compiler sees **right away** that the second method is applicable, so no further investigation is performed, case closed, everyone can go home.
 
@@ -71,7 +71,7 @@ But why on Earth would compiler think that it's also possible to call A with the
 
 ## "I love the smell of implicit polymorphism in the morning", — Martin Odersky
 
-![](napalm.jpg)
+![napalm](./napalm.jpg)
 
 Now this is when [one of](https://github.com/scala/scala-dev/issues/496) [the most](https://issues.scala-lang.org/browse/SI-3583) [controversial](https://groups.google.com/forum/#!topic/scala-debate/2fPsj1q-CXg) [Scala](https://github.com/scala/bug/issues/3583) [feautures](https://contributors.scala-lang.org/t/lets-drop-auto-tupling/1799) comes to play called "auto-tupling":
 
@@ -101,7 +101,7 @@ So given the fact that auto-tupling is possible, it's possible to call A with th
 
 ## There is hope
 
-![](hope.jpg)
+![hope](./hope.jpg)
 
 Now it's unlikely that it's going to be fixed in Scala 2. But there is hope.
 
