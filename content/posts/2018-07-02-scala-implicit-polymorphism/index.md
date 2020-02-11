@@ -1,6 +1,11 @@
 ---
-title: When polymorphism bites you in the ass
-date: "2018-07-02T12:00:00.000Z"
+title: "When polymorphism bites you in the ass"
+date: 2018-07-02T12:00:00+01:00
+tags:
+  - scala
+  - java
+  - functional programming
+  - unit testing
 ---
 
 A curious problem I faced recently when Java polymorphism met Scala polymorphism and they gave a birth to an ugly baby that I had to confront.

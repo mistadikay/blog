@@ -1,0 +1,7 @@
+.site-header {
+  display: none !important;
+}
+
+.home .header-widgets {
+  display: none;
+}

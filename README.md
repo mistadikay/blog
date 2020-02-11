@@ -1,3 +1,9 @@
 # Блog
 
-Generated using [Gatsby](https://github.com/gatsbyjs/gatsby-starter-blog)
+Generated using [Hugo](https://gohugo.io/)
+
+# Deployment
+
+```
+firebase deploy
+```
