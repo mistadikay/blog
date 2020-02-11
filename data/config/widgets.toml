@@ -3,10 +3,6 @@
 [about]
 logo = "/profile-pic.jpg"
 
-[breadcrumbs]
-separator = "/"
-excludeParents = ["posts"]
-
 [recent_posts]
 length = 4
 excludeTypes = ["page"]
@@ -14,3 +10,6 @@ excludeTypes = ["page"]
 [taxonomy_cloud]
 taxonomy = "tags"
 shuffle = false
+
+[sidebar_menu]
+mirror = "main"

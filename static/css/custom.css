@@ -2,6 +2,14 @@
   display: none !important;
 }
 
+.home .home-widgets {
+  padding-top: 38px;
+}
+
 .home .header-widgets {
+  display: none;
+}
+
+.main-menu {
   display: none;
 }
