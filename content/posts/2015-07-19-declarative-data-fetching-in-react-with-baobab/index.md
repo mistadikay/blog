@@ -58,14 +58,13 @@ import { Component } from 'react';
 import DataWatcher from 'components/@data-watcher';
 
 // DataWatcher decorator watches data paths described below
-// and updates local state whenever global state changes
-// something in these paths
+// and updates local state whenever global state changes something in these paths
 @DataWatcher
 class Product extends Component {
   static displayName = 'Product';
   
-  // data paths can be static or they can contain props and
-  // states this gives us lots of flexibility
+  // data paths can be static or they can contain props and states
+  // this gives us lots of flexibility
   static data = (props, state) => ({
     details: [
       'data',
@@ -76,8 +75,7 @@ class Product extends Component {
   });
 
   // since data paths can contain props or state
-  // DataWatcher must be reloaded on every update to make sure
-  // we have the relevant data
+  // DataWatcher must be reloaded on every update to make sure we have the relevant data
   componentWillReceiveProps(nextProps) {
     if (nextProps._productID !== this.props._productID) {
       this._reloadData(nextProps);
@@ -85,8 +83,7 @@ class Product extends Component {
   }
 
   // since data is just in local state of the component
-  // we can work with it and not care about when and from where
-  // it will be delivered
+  // we can work with it and not care about when and from where it will be delivered
   render() {
     const details = this.state.data.details;
 
@@ -136,8 +133,7 @@ class ProductsList extends Component {
       }
     ],
     
-    // this is the case when we need to store ui state
-    // outside the component
+    // this is the case when we need to store ui state outside the component
     selectedProductID: [
       'ui',
       'products',
@@ -227,8 +223,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // whenever someone is trying to access data in these paths
-    // and it is not found
+    // whenever someone is trying to access data in these paths and it is not found
     // we are requesting this missing data from the server
     state.on('get',
       [ 'data', 'products', 'details' ],
