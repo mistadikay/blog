@@ -1,3 +1,21 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(/fonts/JetBrainsMono-Regular.woff2) format("woff2"),
+    url(/fonts/JetBrainsMono-Regular.woff) format("woff"),
+    url(/fonts/JetBrainsMono-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(/fonts/JetBrainsMono-Italic.woff2) format("woff2"),
+    url(/fonts/JetBrainsMono-Italic.woff) format("woff"),
+    url(/fonts/JetBrainsMono-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic
+}
+
 .site-header {
   display: none !important;
 }
@@ -16,4 +34,8 @@
 
 .highlight pre {
   font-size: 0.75em;
+}
+
+.highlight code {
+  font-family: JetBrainsMono, monospace;
 }

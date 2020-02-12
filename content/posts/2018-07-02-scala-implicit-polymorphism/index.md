@@ -40,7 +40,7 @@ doReturn("bar", "foo", "qix").when(mock).foo();
 
 <br>Mockito is targetting Java and apparently Java is perfectly capable of recognizing when a single-argument version is called and when — the varargs one. However, when calling the same method from Scala we get an exception:
 
-```
+```java
 Error: ambiguous reference to overloaded definition,
 both method doReturn in object Mockito of type (x$1: Any, x$2: Object*)org.mockito.stubbing.Stubber
 and  method doReturn in object Mockito of type (x$1: Any)org.mockito.stubbing.Stubber
