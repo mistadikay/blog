@@ -266,7 +266,11 @@ With reBEM layers you can:
 
 There are endless ways reBEM layers can be used and organized, so the example I’ll demonstrate you is just one of the many options. Here is an illustration for a better understanding.
 
-![one of the most common use-cases for us](./layers.png)*one of the most common use-cases for us*
+{{< center >}}
+![one of the most common use-cases for us](./layers.png)
+_one of the most common use-cases for us_
+{{< /center >}}
+<br><br>
 
 1. The first layer in the bottom is **[core-components](https://github.com/rebem/core-components)** where we have all those form elements and basic components like popup and tabs — these are the components that will likely to be in ANY application or interface. We don’t have any styles in this theme, so it’s only about functionality and structure.
 
@@ -327,7 +331,9 @@ export default function Button({ mods, mix, children, ...props }) {
 }
 ```
 
-![](./button1.png#center)
+{{< center >}}
+![](./button1.png)
+{{< /center >}}
 
 **2. theme-reset layer**
 
@@ -364,7 +370,9 @@ Now, we reset styles for this button. In this layer, we have only styles, since 
 }
 ```
 
+{{< center >}}
 ![](./button2.png)
+{{< /center >}}
 
 **3. custom-components layer**
 
@@ -404,7 +412,9 @@ export default class extends React.Component {
 
 Note that we take all styles from the previous layers (only reset theme so far) and the Button from the last layer which is core components and then we use this button in our new component. This is the power of composition — see, we don’t CHANGE anything in a button from core-components, we just use it to create more complex button.
 
+{{< center >}}
 ![](./button3.png)
+{{< /center >}}
 
 **4. product-theme layer**
 
@@ -437,7 +447,9 @@ export default function Button({ children, ...props }) {
 
 So now the Button from the previous layer is custom-components, but styles are imported not only from reset theme, but also from our current product-theme. Again, we don’t change anything in the original button, we just use it to create another component.
 
+{{< center >}}
 ![](./button4.png)
+{{< /center >}}
 
 **5. using our button in app layer**
 
@@ -472,7 +484,9 @@ class SomeAppComponent extends React.Component {
 
 The same picture: Button is from the last layer (product theme) and styles from all previous themes. Rick and Roll!
 
+{{< center >}}
 ![](./button5.png)
+{{< /center >}}
 
 ### reBEM layers: webpack
 
