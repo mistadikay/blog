@@ -5,6 +5,9 @@ tags:
   - javascript
   - react
   - css
+cover:
+  image: ./cover.jpeg
+  style: fill
 ---
 
 It’s been about a year since me and [Kir Belevich](https://github.com/deepsweet) started using React at [Lazada Group](http://www.lazada.com/) for some internal admin interfaces. We learned a lot during that time and our minds have been heavily shifted by that one-way data-flow philosophy React pushes.
