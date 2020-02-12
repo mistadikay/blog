@@ -21,6 +21,18 @@ enableEmoji = true
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "pygments"
+    tabWidth = 2
+
 [params.info]
 description = "Developer diaries"
 title404 = "Nothing's here!"
