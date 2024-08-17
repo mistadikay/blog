@@ -106,8 +106,4 @@ posts = "/:title"
 hrefTargetBlank = true
 
 [languages]
-# edit this block for your own language
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+  [languages.en]
