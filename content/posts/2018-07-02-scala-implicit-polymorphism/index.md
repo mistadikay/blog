@@ -1,5 +1,5 @@
 ---
-title: "When polymorphism bites you in the ass"
+title: "When polymorphism bites you in the butt"
 date: 2018-07-02T12:00:00+01:00
 tags:
   - scala
