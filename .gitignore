@@ -6,3 +6,4 @@ public
 .cache/
 yarn.lock
 .firebase
+.hugo_build.lock
